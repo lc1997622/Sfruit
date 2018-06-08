@@ -30,3 +30,16 @@ body {
     background: transparent;
     transition: all 0.3s;
 }
+
+.list-group1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-group2 {
+    display: flex;
+}
+
+li {
+    flex: auto;
+}
