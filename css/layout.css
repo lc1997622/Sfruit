@@ -31,9 +31,14 @@ body {
     transition: all 0.3s;
 }
 
+.list-group {
+    margin-top: 10px;
+}
+
 .list-group1 {
     display: flex;
     justify-content: space-between;
+    height: 40px;
 }
 
 .list-group2 {
@@ -42,4 +47,8 @@ body {
 
 li {
     flex: auto;
+}
+
+.card {
+    margin: 10px;
 }

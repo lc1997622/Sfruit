@@ -17,18 +17,14 @@
     <!--上部-->
     <div class="container">
         <div class="cnt1" id="nav1">
-            <nav class="navbar">
-                <div class="btn-group pull-right" role="group">
-                    <button type="button" class="btn btn-default" role="button">登陆</button>
-                    <button type="button" class="btn btn-default" role="button">注册</button>
-                </div>
+            <nav class="navbar justify-content-end">
+                <button type="button" id="denglu" class="btn btn-default" role="button">登陆</button>
+                <button type="button" id="zhuce" class="btn btn-default" role="button">注册</button>
             </nav>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <form class="navbar-form pull-right">
-                    <div class="form-group navbar-right">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <button type="submit" class="btn btn-default pull-right">搜索</button>
-                    </div>
+            <nav class="navbar justify-content-end">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="sousuo" type="submit">搜索</button>
                 </form>
             </nav>
         </div>
@@ -36,54 +32,118 @@
     <!--中间-->
     <div class="container">
         <ul class="list-group">
-            <ul class="list-group1">
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">分类1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Another link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
             </ul>
-            <ul class="list-group1">
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">分类2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Another link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
             </ul>
-            <ul class="list-group1">
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
-                <li class="list-group-item">分类1</li>
-                <li class="list-group-item">分类2</li>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">分类3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Another link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
             </ul>
         </ul>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="C:\Users\LiChao\Desktop\水果图片\水果图片/9f738d16e88b33c68b4d6f54e547d9c5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">香蕉</h5>
+                    <p class="card-text">这是香蕉</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="C:\Users\LiChao\Desktop\水果图片\水果图片/9f738d16e88b33c68b4d6f54e547d9c5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">香蕉</h5>
+                    <p class="card-text">这是香蕉</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="C:\Users\LiChao\Desktop\水果图片\水果图片/9f738d16e88b33c68b4d6f54e547d9c5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">香蕉</h5>
+                    <p class="card-text">这是香蕉</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="C:\Users\LiChao\Desktop\水果图片\水果图片/9f738d16e88b33c68b4d6f54e547d9c5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">香蕉</h5>
+                    <p class="card-text">这是香蕉</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="C:\Users\LiChao\Desktop\水果图片\水果图片/9f738d16e88b33c68b4d6f54e547d9c5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">香蕉</h5>
+                    <p class="card-text">这是香蕉</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="C:\Users\LiChao\Desktop\水果图片\水果图片/9f738d16e88b33c68b4d6f54e547d9c5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">香蕉</h5>
+                    <p class="card-text">这是香蕉</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="C:\Users\LiChao\Desktop\水果图片\水果图片/9f738d16e88b33c68b4d6f54e547d9c5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">香蕉</h5>
+                    <p class="card-text">这是香蕉</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="C:\Users\LiChao\Desktop\水果图片\水果图片/9f738d16e88b33c68b4d6f54e547d9c5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">香蕉</h5>
+                    <p class="card-text">这是香蕉</p>
+                </div>
             </div>
         </div>
     </div>
     <!--页脚-->
-    <div class="footer">
-        <div class="container">
-            <div class="row footer-bottom">
-                <ul class="list-inline text-center">
-                    <li>版权所有 @2018软工小组 保留所有权力</li>
-                </ul>
-            </div>
-        </div>
+    <div class="footer text-center">
+        版权所有 @2018软工小组 保留所有权力
     </div>
+    <script type="text/javascript" src="../Sfruit/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 
-</html>s
+</html>
