@@ -1,0 +1,42 @@
+﻿.btn-square {
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(30, 208, 186, 0.3);
+    border: 3px dashed rgba(255, 106, 0, 0.7);
+}
+
+.btn-round {
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.6);
+    border: 3px solid rgba(255, 216, 0, 0.7);
+    border-radius: 50px;
+}
+
+.portrait {
+    margin: auto;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.info-list {
+    border: 3px dashed rgba(255, 216, 0, 0.7);
+}
+
+.icon {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: 0;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+}
+
+.bg {
+    height: 100%;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}

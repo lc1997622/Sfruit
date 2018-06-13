@@ -5,38 +5,29 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
+    <title>login</title>
     <link rel="stylesheet" type="text/css" href="../css/layout.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div class="wrapper" id="register_background">
-        <div id="register_content">
+    <div class="wrapper" id="login_background">
+        <div id="login_content">
+            <img src="../Images/user.JPG" id="user_pic">
             <div class="myinput">
                 <img src="../Images/user_icon.png">
-                <input type="text" placeholder="用户名" align="center">
+                <input id="username" type="text" placeholder="用户名" align="center">
             </div>
             <div class="myinput">
                 <img src="../Images/password_icon.png">
-                <input type="text" placeholder="密码">
+                <input id="password" type="password" placeholder="密码">
             </div>
-            <div id="user_check">
-                <div class="check" id="check_user">
-                    <input type="checkbox">
-                    <span>用户</span>
-                </div>
-                <div class="check" id="check_retailor">
-                    <input type="checkbox">
-                    <span>零售商</span>
-                </div>
-                <div class="check" id="check_charge">
-                    <input type="checkbox">
-                    <span>负责人</span>
-                </div>
+            <div id="user_choose">
+                <a id="forget">忘记密码</a>
+                <a href="register.html" id="toregister">新用户？去注册</a>
             </div>
-            <button type="button" id="register">注册</button>
+            <button type="submit" id="login" onclick="doSubmitForm()">登录</button>
         </div>
     </div>
     <!--页脚-->
@@ -46,6 +37,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
