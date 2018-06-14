@@ -67,6 +67,10 @@ li {
     flex: auto;
 }
 
+#fruits>div {
+    flex: 0 0 21.3%;
+}
+
 .card {
     margin: 10px;
 }
@@ -350,4 +354,25 @@ body {
     background-color: #e0d6d6;
     text-align: center;
     padding-top: 27%;
+}
+
+#cart_confirm {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%
+}
+
+#confirm_pay {
+    font-size: 1.3em;
+    border-style: solid;
+    border-color: #bbbbbb;
+    background-color: #e7d4d5;
+    color: #790707;
+    font-style: bold;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+#total {
+    font-size: 1.3em;
 }

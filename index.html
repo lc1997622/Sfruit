@@ -6,7 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sfrit</title>
-    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <script src="../Sfruit/assets/js/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Sfruit/css/layout.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 </head>
@@ -40,40 +41,18 @@
                         <div class="row classify">
                             <div id="shop" class="col-md-2 classify_title">商家</div>
                             <ul id="shopper" class="col-md-10 nav nav-pills classify_detail" role="tablist">
-                                <li class="col-md-3 nav-item">
-                                    <a class="nav-link" font-size="0.8em" role="tab" data-toggle="tab" aria-controls="shooper1">商家1</a>
-                                </li>
-                                <li class="col-md-3 nav-item">
-                                    <a class="nav-link" font-size="0.8em" role="tab" data-toggle="tab" aria-controls="shooper2">商家2</a>
-                                </li>
-                                <li class="col-md-3 nav-item">
-                                    <a class="nav-link" font-size="0.8em" role="tab" data-toggle="tab" aria-controls="shooper3">商家3</a>
-                                </li>
-                                <li class="col-md-3 nav-item">
-                                    <a class="nav-link" font-size="0.8em" role="tab" data-toggle="tab" aria-controls="shooper4">商家4</a>
+                                <li class="col-md-3 nav-item" v-for="shop in shoppers">
+                                    <a class="nav-link" @click="choseshop()" font-size="0.8em" role="tab" data-toggle="tab" aria-controls="shooper1">{{shop.name}}</a>
                                 </li>
                             </ul>
-
                         </div>
                         <div class="row classify">
                             <div class="col-md-2 classify_title">种类</div>
-                            <div class="col-md-10 nav nav-pills classify_detail">
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">苹果</a>
-                                </div>
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">香蕉</a>
-                                </div>
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">荔枝</a>
-                                </div>
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">樱桃</a>
-                                </div>
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">杏子</a>
-                                </div>
-                            </div>
+                            <ul id="kinds" class="col-md-10 nav nav-pills classify_detail">
+                                <li class="col-md-3 nav-item" v-for="kind in kinds">
+                                    <a class="nav-link" href="#" font-size="0.8em">{{kind.name}}</a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="row classify">
                             <div class="col-md-2 classify_title">国产/进口</div>
@@ -88,80 +67,20 @@
                         </div>
                         <div class="row classify">
                             <div class="col-md-2 classify_title">原产地</div>
-                            <div class="col-md-10 nav nav-pills classify_detail">
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">中国</a>
-                                </div>
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">越南</a>
-                                </div>
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">荷兰</a>
-                                </div>
-                                <div class="col-md-3 nav-item">
-                                    <a class="nav-link" href="#" font-size="0.8em">美国</a>
-                                </div>
-                            </div>
+                            <ul id="country" class="col-md-10 nav nav-pills classify_detail">
+                                <li class="col-md-3 nav-item" v-for="country in countrys">
+                                    <a class="nav-link" href="#" font-size="0.8em">{{country.name}}</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" src="/Images/banana.jpg" alt="Card image cap">
+                    <div id="fruits" class="card-deck">
+                        <div class="card" v-for="fruit in fruits" @click="chosefruit(fruit)">
+                            <img class="card-img-top" :src="fruit.src" lt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">香蕉</h5>
-                                <p class="card-text">这是香蕉</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/Images/banana.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">香蕉</h5>
-                                <p class="card-text">这是香蕉</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/Images/banana.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">香蕉</h5>
-                                <p class="card-text">这是香蕉</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/Images/banana.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">香蕉</h5>
-                                <p class="card-text">这是香蕉</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" src="/Images/banana.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">香蕉</h5>
-                                <p class="card-text">这是香蕉</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/Images/banana.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">香蕉</h5>
-                                <p class="card-text">这是香蕉</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/Images/banana.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">香蕉</h5>
-                                <p class="card-text">这是香蕉</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/Images/banana.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">香蕉</h5>
-                                <p class="card-text">这是香蕉</p>
+                                <h5 class="card-title">{{fruit.name}}</h5>
+                                <p class="card-text">{{fruit.jieshao}}</p>
                             </div>
                         </div>
                     </div>
@@ -175,11 +94,10 @@
     <div class="footer text-center">
         版权所有 @2018软工小组 保留所有权利
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="/js/index.js"></script>
+    <script src="../Sfruit/js/index.js"></script>
 </body>
 
 </html>
