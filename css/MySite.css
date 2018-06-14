@@ -36,6 +36,7 @@
 }
 
 .bg {
+    background-image: url(../Images/bg7.jpg);
     height: 100%;
     background-size: 100% !important;
     background-repeat: no-repeat;
