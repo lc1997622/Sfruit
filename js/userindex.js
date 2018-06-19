@@ -41,15 +41,6 @@ $(document).ready(function() {
             return fruit.country.id != 1;
         })
     })
-    $("#submit").click(function() {
-        var searchFruit = $("#searchFruit").get(0).value;
-        fruit.fruits = window.fruits.filter(function(fruit) {
-            return fruit != null;
-        });
-        fruit.fruits = fruit.fruits.filter(function(fruit) {
-            return fruit.name.indexOf(searchFruit) != -1;
-        })
-    })
 });
 
 var country;
@@ -145,7 +136,7 @@ var fruit = new Vue({
     data: {
         fruits: [{
                 id: 1,
-                src: '../Sfruit/Images/banana.jpg',
+                src: '../Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
                 shopper: {
@@ -160,7 +151,7 @@ var fruit = new Vue({
             },
             {
                 id: 2,
-                src: '../Sfruit/Images/banana.jpg',
+                src: '../Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
                 shopper: {
@@ -175,7 +166,7 @@ var fruit = new Vue({
             },
             {
                 id: 3,
-                src: '../Sfruit/Images/banana.jpg',
+                src: '../Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
                 shopper: {
@@ -190,7 +181,7 @@ var fruit = new Vue({
             },
             {
                 id: 4,
-                src: '../Sfruit/Images/banana.jpg',
+                src: '../Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
                 shopper: {
@@ -205,7 +196,7 @@ var fruit = new Vue({
             },
             {
                 id: 5,
-                src: '../Sfruit/Images/banana.jpg',
+                src: '../Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
                 shopper: {
@@ -220,7 +211,7 @@ var fruit = new Vue({
             },
             {
                 id: 6,
-                src: '../Sfruit/Images/banana.jpg',
+                src: '../Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
                 shopper: {
@@ -234,7 +225,7 @@ var fruit = new Vue({
                 jieshao: '这是香蕉。'
             },
             {
-                src: '../Sfruit/Images/banana.jpg',
+                src: '../Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
                 shopper: {
@@ -247,7 +238,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是香蕉。'
             }, {
-                src: '../Sfruit/Images/banana.jpg',
+                src: '../Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
                 shopper: {
@@ -260,7 +251,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是香蕉。'
             }, {
-                src: '../Sfruit/Images/Kiwi.jpg',
+                src: '../Images/Kiwi.jpg',
                 name: '猕猴桃',
                 kind: 'Kiwi',
                 shopper: {
@@ -273,7 +264,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是猕猴桃。'
             }, {
-                src: '../Sfruit/Images/Kiwi.jpg',
+                src: '../Images/Kiwi.jpg',
                 name: '猕猴桃',
                 kind: 'Kiwi',
                 shopper: {
@@ -286,7 +277,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是猕猴桃。'
             }, {
-                src: '../Sfruit/Images/Kiwi.jpg',
+                src: '../Images/Kiwi.jpg',
                 name: '猕猴桃',
                 kind: 'Kiwi',
                 shopper: {
@@ -299,7 +290,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是猕猴桃。'
             }, {
-                src: '../Sfruit/Images/Kiwi.jpg',
+                src: '../Images/Kiwi.jpg',
                 name: '猕猴桃',
                 kind: 'Kiwi',
                 shopper: {
@@ -312,7 +303,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是猕猴桃。'
             }, {
-                src: '../Sfruit/Images/Strawberry.jpg',
+                src: '../Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
                 shopper: {
@@ -325,7 +316,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是草莓。'
             }, {
-                src: '../Sfruit/Images/Strawberry.jpg',
+                src: '../Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
                 shopper: {
@@ -338,7 +329,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是草莓。'
             }, {
-                src: '../Sfruit/Images/Strawberry.jpg',
+                src: '../Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
                 shopper: {
@@ -351,7 +342,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是草莓。'
             }, {
-                src: '../Sfruit/Images/Strawberry.jpg',
+                src: '../Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
                 shopper: {
@@ -364,7 +355,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是草莓。'
             }, {
-                src: '../Sfruit/Images/Strawberry.jpg',
+                src: '../Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
                 shopper: {
@@ -377,7 +368,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是草莓。'
             }, {
-                src: '../Sfruit/Images/apple.jpg',
+                src: '../Images/apple.jpg',
                 name: '苹果',
                 kind: 'apple',
                 shopper: {
@@ -390,7 +381,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是苹果。'
             }, {
-                src: '../Sfruit/Images/apple.jpg',
+                src: '../Images/apple.jpg',
                 name: '苹果',
                 kind: 'apple',
                 shopper: {
@@ -403,7 +394,7 @@ var fruit = new Vue({
                 },
                 jieshao: '这是苹果。'
             }, {
-                src: '../Sfruit/Images/apple.jpg',
+                src: '../Images/apple.jpg',
                 name: '苹果',
                 kind: 'apple',
                 shopper: {
@@ -415,8 +406,9 @@ var fruit = new Vue({
                     name: '荷兰'
                 },
                 jieshao: '这是苹果。'
-            }, {
-                src: '../Sfruit/Images/apple.jpg',
+            },
+            {
+                src: '../Images/apple.jpg',
                 name: '苹果',
                 kind: 'apple',
                 shopper: {
@@ -428,8 +420,9 @@ var fruit = new Vue({
                     name: '美国'
                 },
                 jieshao: '这是苹果。'
-            }, {
-                src: '../Sfruit/Images/apricot.jpg',
+            },
+            {
+                src: '../Images/apricot.jpg',
                 name: '杏子',
                 kind: 'apricot',
                 shopper: {
@@ -441,8 +434,9 @@ var fruit = new Vue({
                     name: '中国'
                 },
                 jieshao: '这是杏子。'
-            }, {
-                src: '../Sfruit/Images/apricot.jpg',
+            },
+            {
+                src: '../Images/apricot.jpg',
                 name: '杏子',
                 kind: 'apricot',
                 shopper: {
@@ -454,8 +448,9 @@ var fruit = new Vue({
                     name: '越南'
                 },
                 jieshao: '这是杏子。'
-            }, {
-                src: '../Sfruit/Images/apricot.jpg',
+            },
+            {
+                src: '../Images/apricot.jpg',
                 name: '杏子',
                 kind: 'apricot',
                 shopper: {
@@ -467,8 +462,9 @@ var fruit = new Vue({
                     name: '荷兰'
                 },
                 jieshao: '这是杏子。'
-            }, {
-                src: '../Sfruit/Images/apricot.jpg',
+            },
+            {
+                src: '../Images/apricot.jpg',
                 name: '杏子',
                 kind: 'apricot',
                 shopper: {

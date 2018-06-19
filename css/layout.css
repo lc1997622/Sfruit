@@ -376,3 +376,111 @@ body {
 #total {
     font-size: 1.3em;
 }
+
+
+/*details*/
+
+#detailwrapper {
+    margin-bottom: 5%;
+}
+
+#details_wrapper {
+    min-height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #efeee4;
+    padding-bottom: 5%;
+}
+
+#title_details {
+    display: inline-block;
+    width: 100%;
+    background-color: #f4f4ef;
+    padding: 1.5% 2% 1.5% 2%;
+    color: #a7c05f;
+    font-size: 1.2em;
+}
+
+#details_content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#detail1 {
+    height: 100%;
+    width: 100%;
+    margin-top: 7%;
+}
+
+#details_img_box {
+    height: 210px;
+}
+
+#details_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+#details_explain {
+    text-align: center;
+}
+
+#details_name {
+    font-size: 2em;
+}
+
+#details_check {
+    padding-top: 7%;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+#details_check span,
+img {
+    margin-right: 2%;
+}
+
+#details_count {
+    border-color: #000000;
+    border-style: solid;
+    background-color: #FFFFFF;
+    padding: 0.5% 7% 0.5% 7%;
+}
+
+#details_buttons {
+    padding-top: 10%;
+    width: 100%;
+}
+
+#details_buttons span {
+    width: 50%;
+    color: #55895a;
+    background-color: #d0ebe0;
+    border-style: solid;
+    border-color: #BBBBBB;
+    margin-left: 5%;
+    padding: 1% 6% 1% 6%;
+    font-size: 1.5em;
+}
+
+#detail2 {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #d3ede8;
+    font-size: 2em;
+    color: #000000;
+    border-style: solid;
+    border-color: #101010;
+}
+
+.img-thumbnail {
+    height: 60px;
+    width: 60px;
+}
+
+.img-circle {
+    border-radius: 500px;
+}

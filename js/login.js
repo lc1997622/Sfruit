@@ -9,5 +9,6 @@ function doSubmitForm() {
         alert('error password');
         return false;
     }
+    alert('error name');
     return true;
 }

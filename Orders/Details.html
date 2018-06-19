@@ -1,25 +1,73 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sfrit</title>
+    <script src="../assets/js/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <!--// <script type="text/javascript">
+	// 	function resizeIMG(){
+	// 		var ImgBox = document.getElementById("details_img_box");
+	// 		var Box_w = ImgBox.width;
+
+	// 		var w=parseInt(Box_w);
+
+	// 		var temp = w * 50%;
+	// 		var h = parseInt(temp);
+	// 		ImgBox.style.height = h;
+	// 	}
+	// </script>
+-->
 </head>
 
 <body>
+    <div class="wrapper" id="detailwrapper">
+        <div id="details_wrapper">
+            <div id="title_details">
+                网站名
+            </div>
+            <div id="details_content">
+                <div id="detail1" class="row">
+                    <div class="col-md-5" id="details_img_box">
+                        <img src="../Images/detail1.jpg">
+                    </div>
+                    <div class="col-md-7" id="details_explain">
+                        <div id="details_name">桑葚</div>
+                        <div id="details_check">
+                            <span id="details_price">24.5元/Kg</span>
+                            <span>数量：</span>
+                            <img src="../Images/sub.png" @click="count-=1">
+                            <span id="details_count">{{count}}</span>
+                            <img src="../Images/add.png" @click="count+=1">
+                        </div>
+                        <div id="details_buttons">
+                            <span>加入购物车</span>
+                            <span id="buy">立即购买</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="detail2">
+                    这是一大块介绍
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!--页脚-->
+    <div class="footer text-center">
+        版权所有 @2018软工小组 保留所有权利
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="../js/shop.js"></script>
 </body>
 
 </html>
