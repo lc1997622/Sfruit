@@ -49,10 +49,17 @@ $(document).ready(function() {
         fruit.fruits = fruit.fruits.filter(function(fruit) {
             return fruit.name.indexOf(searchFruit) != -1;
         })
+    });
+    $("#usercenter").click(function() {
+        window.location.href = '../UserCenter/BuyerCenter.html'
     })
-    $("#buyer").click(function() {
-        window.location.href = "../Sfruit/UserCenter/BuyerCenter.html"
+    $("#index").click(function() {
+        window.location.href = '../index.html'
     })
+    var id = window.location.href.split("=")[1];
+    if (id == 1) {
+        denglumodel.isLogin = true;
+    }
 });
 
 var country;
@@ -158,6 +165,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
+                price: 5.5,
                 shopper: {
                     id: 'shopper1',
                     name: '商家1'
@@ -173,6 +181,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -188,6 +197,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -203,6 +213,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -218,6 +229,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -233,6 +245,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -247,6 +260,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -260,6 +274,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/banana.jpg',
                 name: '香蕉',
                 kind: 'banana',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -273,6 +288,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Kiwi.jpg',
                 name: '猕猴桃',
                 kind: 'Kiwi',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -286,6 +302,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Kiwi.jpg',
                 name: '猕猴桃',
                 kind: 'Kiwi',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -299,6 +316,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Kiwi.jpg',
                 name: '猕猴桃',
                 kind: 'Kiwi',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -312,6 +330,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Kiwi.jpg',
                 name: '猕猴桃',
                 kind: 'Kiwi',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -325,6 +344,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
+                price: 5,
                 shopper: {
                     id: 'shopper1',
                     name: '商家1'
@@ -338,6 +358,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -351,6 +372,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
+                price: 5,
                 shopper: {
                     id: 'shopper3',
                     name: '商家3'
@@ -364,6 +386,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
+                price: 5,
                 shopper: {
                     id: 'shopper4',
                     name: '商家4'
@@ -377,6 +400,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/Strawberry.jpg',
                 name: '草莓',
                 kind: 'Strawberry',
+                price: 5,
                 shopper: {
                     id: 'shopper3',
                     name: '商家3'
@@ -390,6 +414,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/apple.jpg',
                 name: '苹果',
                 kind: 'apple',
+                price: 5,
                 shopper: {
                     id: 'shopper1',
                     name: '商家2'
@@ -403,6 +428,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/apple.jpg',
                 name: '苹果',
                 kind: 'apple',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -416,6 +442,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/apple.jpg',
                 name: '苹果',
                 kind: 'apple',
+                price: 5,
                 shopper: {
                     id: 'shopper3',
                     name: '商家3'
@@ -429,6 +456,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/apple.jpg',
                 name: '苹果',
                 kind: 'apple',
+                price: 5,
                 shopper: {
                     id: 'shopper4',
                     name: '商家4'
@@ -442,6 +470,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/apricot.jpg',
                 name: '杏子',
                 kind: 'apricot',
+                price: 5,
                 shopper: {
                     id: 'shopper1',
                     name: '商家1'
@@ -455,6 +484,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/apricot.jpg',
                 name: '杏子',
                 kind: 'apricot',
+                price: 5,
                 shopper: {
                     id: 'shopper2',
                     name: '商家2'
@@ -468,6 +498,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/apricot.jpg',
                 name: '杏子',
                 kind: 'apricot',
+                price: 5,
                 shopper: {
                     id: 'shopper3',
                     name: '商家3'
@@ -481,6 +512,7 @@ var fruit = new Vue({
                 src: '../Sfruit/Images/apricot.jpg',
                 name: '杏子',
                 kind: 'apricot',
+                price: 5,
                 shopper: {
                     id: 'shopper4',
                     name: '商家4'
@@ -496,7 +528,13 @@ var fruit = new Vue({
     methods: {
         chosefruit: function(inf) {
             var id = inf.id;
-            console.log(inf);
+            var index = inf.src.indexOf("Image", 0);
+            var string = inf.src.substring(index);
+            inf.src = '../' + string;
+            var url = 'Orders/details.html?id=' + id;
+            var strFruit = JSON.stringify(inf);
+            localStorage.setItem('key', strFruit);
+            window.location.href = url;
         },
         country: function(country) {
             this.fruits = window.fruits.filter(function(fruit) {
@@ -528,15 +566,20 @@ var fruits = fruit.fruits;
 
 function doSubmitForm() {
     var username = $('#username');
-    var pwd = $('#password')
-    if (!new RegExp(/\w{3,10}/).test(username.value)) {
+    var pwd = $('#password');
+    var id = 0;
+    if (!new RegExp(/\w{3,10}/).test(username.val())) {
         alert('error name');
         return false;
     }
-    if (!new RegExp(/\S{6,20}/).test(pwd.value)) {
+    if (!new RegExp(/\S{6,20}/).test(pwd.val())) {
         alert('error password');
         return false;
     }
-    window.denglumodel.isLogin = false;
-    window.location.href = "../index.html"
+    id = 1;
+    window.location.href = '../index.html?islogin=' + id;
 }
+
+var shoppingcart = new Vue({
+
+})
