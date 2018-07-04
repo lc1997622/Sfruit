@@ -107,6 +107,10 @@ body {
     height: 100%;
 }
 
+.card-img-top {
+    height: 200px;
+}
+
 #login_content {
     position: relative;
     top: 15%;
