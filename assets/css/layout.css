@@ -128,7 +128,7 @@ body {
 }
 
 .myinput {
-    display: inline-block;
+    display：inline-block;
     margin-top: 2%;
 }
 
@@ -143,7 +143,7 @@ body {
 
 #user_choose {
     margin-top: 2%;
-    display: inline-block;
+    display：inline-block;
 }
 
 #user_choose a {
@@ -173,10 +173,10 @@ body {
     color: #FFFFFF;
     font-size: 1.5em;
     letter-spacing: 1em;
+    text-indent: 1em;
     text-align: center;
     padding-top: 0.3%;
     padding-bottom: 0.3%;
-    /*margin-right: -0.3%;*/
 }
 
 #register_background {
@@ -199,7 +199,7 @@ body {
 
 #user_check {
     margin-top: 2%;
-    display: inline-block;
+    display：inline-block;
 }
 
 .check {
@@ -256,7 +256,7 @@ body {
 
 .classify_title {
     display: inline-block;
-    border-style: solid;
+    border-style: solid none none solid;
     border-color: #938c6e;
     background-color: #cdc1c0;
     text-align: center;
@@ -270,13 +270,18 @@ body {
 .classify_detail {
     display: inline-block;
     font-size: 1em;
-    border-style: solid;
+    border-style: solid solid none solid;
     border-color: #938c6e;
     text-align: center;
 }
 
 .classify_detail a {
     color: #000000;
+}
+
+#cuback,
+#country {
+    border-bottom-style: solid;
 }
 
 
@@ -309,7 +314,6 @@ body {
     font-style: bold;
     padding: 0.2% 0.3% 0.2% 0.3%;
     background-color: #FFFFFF;
-    font-size: 1.2em;
 }
 
 #shoppingcart_content {
@@ -388,6 +392,7 @@ body {
 
 
 /*details*/
+
 
 /*#detailwrapper {
     margin-bottom: 5%;
@@ -491,7 +496,7 @@ img {
     width: 60px;
 }
 
-.choose{
+.choose {
     border-style: dashed;
     background-color: #8BCABA;
 }
