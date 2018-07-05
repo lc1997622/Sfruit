@@ -124,7 +124,7 @@ body {
 }
 
 .myinput {
-    display：inline-block;
+    display: inline-block;
     margin-top: 2%;
 }
 
@@ -139,7 +139,7 @@ body {
 
 #user_choose {
     margin-top: 2%;
-    display：inline-block;
+    display: inline-block;
 }
 
 #user_choose a {
@@ -191,7 +191,7 @@ body {
 
 #user_check {
     margin-top: 2%;
-    display：inline-block;
+    display: inline-block;
 }
 
 .check {
