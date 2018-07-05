@@ -54,3 +54,58 @@
 .btn-icon {
     cursor: pointer;
 }
+
+.choose{
+    padding-top: 3.5%;
+    font-size: 1.2em;
+    font-style: bold;
+}
+
+#addaddress_top {
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 15%;
+    color: #ACAA57;
+    font-size: 1.2em;
+}
+
+#addaddress_top img, #buyerinfo_top img{
+    margin-left: 2%;
+}
+#addaddress_top span, #buyerinfo_top span {
+    margin-left: 2%;
+    font-style: bold;
+    font-size: 1.1em;
+    padding: 0.2% 0.3% 0.2% 0.3%;
+    background-color: #FFFFFF;
+}
+
+#buyerinfo_top{
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 15%;
+    color: #F5C243;
+    font-size: 1.2em;
+}
+
+.info{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-bottom-style: solid;
+    border-color: #BBBBBB;
+    border-width: 1px;
+}
+
+.info h2{
+    font-size: 1.2em;
+}

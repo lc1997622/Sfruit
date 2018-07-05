@@ -56,8 +56,8 @@ $(document).ready(function() {
     $("#index").click(function() {
         window.location.href = '../index.html'
     })
-    var id = window.location.href.split("=")[1];
-    if (id == 1) {
+    var id = localStorage.getItem('id');
+    if (id == '1') {
         denglumodel.isLogin = true;
     }
 });
@@ -576,10 +576,6 @@ function doSubmitForm() {
         alert('error password');
         return false;
     }
-    id = 1;
+    localStorage.setItem('id', '1');
     window.location.href = '../index.html?islogin=' + id;
 }
-
-var shoppingcart = new Vue({
-
-})

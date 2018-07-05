@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../assets/css/MySite.css">
-    <title>Hello, world!</title>
+    <title>BuyerInfo</title>
 </head>
 
 <body>
@@ -18,16 +18,21 @@
         <div class="bg" style="background-image: url(../Images/5.jpg);">
             <div class="row">
                 <div class="col-md-4 offset-md-1">
-                    <ol class="breadcrumb">
+                    <!-- <ol class="breadcrumb">
                         <li><a href="../index.html">主页</a></li>
                         <li><a href="../UserCenter/BuyerCenter.html">个人中心</a></li>
                         <li class="active">个人资料</li>
-                    </ol>
+                    </ol> -->
+                    <div id="buyerinfo_top">
+                        <span>主页</span>
+                        <img src="../Images/arrow.png">
+                        <span>个人资料</span>
+                    </div>
                 </div>
             </div>
-            <div class="row" style="padding-top: 15%;">
+            <div class="row" style="padding-top: 5%;">
                 <div class="col-md-5 offset-md-5 info-list">
-                    <div class="row">
+                    <div class="row info">
                         <div class="col-md-4">
                             <h2>头像</h2>
                         </div>
@@ -35,7 +40,7 @@
                             <div class="icon"></div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row info">
                         <div class="col-md-4">
                             <h2>昵称</h2>
                         </div>
@@ -43,7 +48,7 @@
                             <h2>用户名</h2>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row info">
                         <div class="col-md-4">
                             <h2>性别</h2>
                         </div>
@@ -51,7 +56,15 @@
                             <h2>男 / 女</h2>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row info">
+                        <div class="col-md-4">
+                            <h2>邮箱</h2>
+                        </div>
+                        <div class="col-md-8" style="text-align: right;">
+                            <h2>123456789@qq.com</h2>
+                        </div>
+                    </div>
+                    <div class="row info">
                         <div class="col-md-4">
                             <h2>联系方式</h2>
                         </div>
@@ -62,9 +75,7 @@
                 </div>
             </div>
             <div class="row" style="padding: 5% 0 10% 0;">
-                <div class="col-md-3 offset-md-6 btn-round">
-                    <h1>修改信息</h1>
-                </div>
+                <button type="submit" class="btn btn-default offset-md-7">修改信息</button>
             </div>
         </div>
     </div>

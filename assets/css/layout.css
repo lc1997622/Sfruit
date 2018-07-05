@@ -171,8 +171,12 @@ body {
     width: 35%;
     height: 15%;
     color: #FFFFFF;
+    font-size: 1.5em;
+    letter-spacing: 1em;
+    text-align: center;
     padding-top: 0.3%;
     padding-bottom: 0.3%;
+    /*margin-right: -0.3%;*/
 }
 
 #register_background {
@@ -305,6 +309,7 @@ body {
     font-style: bold;
     padding: 0.2% 0.3% 0.2% 0.3%;
     background-color: #FFFFFF;
+    font-size: 1.2em;
 }
 
 #shoppingcart_content {
@@ -384,9 +389,9 @@ body {
 
 /*details*/
 
-#detailwrapper {
+/*#detailwrapper {
     margin-bottom: 5%;
-}
+}*/
 
 #details_wrapper {
     min-height: 100%;
@@ -474,13 +479,19 @@ img {
     padding-top: 10%;
     padding-bottom: 10%;
     background-color: #d3ede8;
-    font-size: 2em;
+    font-size: 1.2em;
     color: #000000;
     border-style: solid;
-    border-color: #101010;
+    border-width: 2px;
+    border-color: #771C1C;
 }
 
 .img-thumbnail {
     height: 60px;
     width: 60px;
+}
+
+.choose{
+    border-style: dashed;
+    background-color: #8BCABA;
 }
