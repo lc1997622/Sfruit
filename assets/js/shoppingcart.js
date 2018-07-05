@@ -15,6 +15,9 @@ var shoppingcart = new Vue({
     methods: {
         decart: function(cart) {
             var index = this.carts.cart.indexOf(cart);
+            this.money -= this.carts.cart[index].count * this.carts.cart[index].fruit.price;
+            console.log(this.money);
+            pay.$set(pay.$data, "money", this.money);
             this.carts.cart.splice(index, 1);
             localStorage.setItem('carts', JSON.stringify(this.carts));
         },
@@ -33,7 +36,4 @@ var pay = new Vue({
     data: {
         money: window.shoppingcart.money,
     },
-    methods: {
-
-    }
 })
