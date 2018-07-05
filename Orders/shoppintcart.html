@@ -16,16 +16,16 @@
     <div class="wrapper">
         <div id="shoppingcart_wrapper">
             <div id="shoppingcart_top">
-                <span id="index">主页</span>
+                <span id="index" style="cursor:pointer">主页</span>
                 <img src="../Images/arrow.png">
-                <span id="usercenter">个人中心</span>
+                <span id="usercenter" style="cursor:pointer">个人中心</span>
                 <img src="../Images/arrow.png">
                 <span>购物车</span>
             </div>
             <div id="shoppingcart_content">
                 <span id="notice">商品清单</span>
                 <div class="container" id="shoppingcart">
-                    <div class="row card_cart" v-for='cart in carts'>
+                    <div class="row card_cart" v-for='cart in carts.cart'>
                         <div class="col-md-2 cart_img">
                             <img :src="cart.fruit.src">
                         </div>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="col-md-2 cart_delete">
-                            <div class="cart_deletediv" @click="decart(cart)">删除</div>
+                            <div class="cart_deletediv" @click="decart(cart)" style="cursor:pointer">删除</div>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
             <div id="cart_confirm" class="row">
                 <div class="col-md-7 ">&nbsp;</div>
                 <div class="col-md-2 " id="total">共：{{money}}元</div>
-                <div class="col-md-2 " id="confirm_pay">去付款</div>
+                <div class="col-md-2 " id="confirm_pay" style="cursor:pointer">去付款</div>
                 <div class="col-md-1 ">&nbsp;</div>
             </div>
         </div>

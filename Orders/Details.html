@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper" id="detailwrapper">
         <div id="details_wrapper">
-            <div id="title_details">
+            <div id="title_details" style="cursor:pointer">
                 Sfruit
             </div>
             <div id="details_content">
@@ -30,13 +30,13 @@
                         <div id="details_check">
                             <span id="details_price">{{count*fruit.price}}元/Kg</span>
                             <span>数量：</span>
-                            <img src="../Images/sub.png" v-on:click="count -=1">
+                            <img src="../Images/sub.png" v-on:click="count -=1" style="cursor:pointer">
                             <span id="details_count">{{count}}</span>
-                            <img src="../Images/add.png" v-on:click="count +=1">
+                            <img src="../Images/add.png" v-on:click="count +=1" style="cursor:pointer">
                         </div>
                         <div id="details_buttons">
-                            <span id="join_cart">加入购物车</span>
-                            <span id="to_cart">立即购买</span>
+                            <span id="join_cart" style="cursor:pointer">加入购物车</span>
+                            <span id="to_cart" style="cursor:pointer">立即购买</span>
                         </div>
                     </div>
                 </div>

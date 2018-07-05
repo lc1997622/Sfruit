@@ -500,3 +500,68 @@ img {
     border-style: dashed;
     background-color: #8BCABA;
 }
+
+
+/*modify*/
+
+#modify_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e6eaeb;
+}
+
+#modify_toptemp {
+    width: 100%;
+    background-image: url(../../Images/modify_top.jpg);
+    background-size: 100% 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-top: 15%;
+    padding-left: 3%;
+}
+
+#modify_top {
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+#modify_top img {
+    margin-left: 2%;
+}
+
+#modify_top span {
+    color: #F5C243;
+    margin-left: 2%;
+    font-style: bold;
+    padding: 0.2% 0.3% 0.2% 0.3%;
+    background-color: #FFFFFF;
+    font-size: 1.1em;
+}
+
+#modify_content {
+    margin: 0 auto;
+    padding: 1% 5% 5% 5%;
+}
+
+#modify_top a {
+    color: #F5C243;
+    font-style: bold;
+    font-size: 1.1em;
+    padding: 0.2% 0.3% 0.2% 0.3%;
+    text-decoration: none;
+}
+
+#notice_modify {
+    margin-left: 45%;
+    padding: 0.8% 3% 0.8% 3%;
+    font-style: bold;
+    background-color: rgba(227, 210, 210, 0.68);
+    display: inline-block;
+    color: #E51C23;
+    font-size: 1.2em;
+}
+
+#fruit button {
+    margin: 0 auto;
+}

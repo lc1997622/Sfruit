@@ -46,47 +46,48 @@
                 <div id="index_content">
                     <div id="classify_content">
                         <div class="row classify">
-                            <div id="bcshop" class="col-md-2 classify_title">商家</div>
+                            <div id="bcshop" class="col-md-2 classify_title" style="cursor:pointer">商家</div>
                             <ul id="shopper" class="col-md-10 nav nav-pills classify_detail" role="tablist">
                                 <li class="col-md-3 nav-item" v-for="shop in shoppers" @click="choseShopper(shop)">
-                                    <a class="nav-link" font-size="0.8em">{{shop.name}}</a>
+                                    <a class="nav-link" font-size="0.8em" style="cursor:pointer">{{shop.name}}</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="row classify">
-                            <div id="bckind" class="col-md-2 classify_title">种类</div>
+                            <div id="bckind" class="col-md-2 classify_title" style="cursor:pointer">种类</div>
                             <ul id="kinds" class="col-md-10 nav nav-pills classify_detail">
                                 <li class="col-md-3 nav-item" v-for="kind in kinds" @click="choseKind(kind)">
-                                    <a class="nav-link" font-size="0.8em">{{kind.name}}</a>
+                                    <a class="nav-link" font-size="0.8em" style="cursor:pointer">{{kind.name}}</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="row classify">
-                            <div id="bcchina" class="col-md-2 classify_title">国产/进口</div>
+                            <div id="bcchina" class="col-md-2 classify_title" style="cursor:pointer">国产/进口</div>
                             <div class="col-md-10 nav nav-pills classify_detail">
                                 <div id="china" class="col-md-3 nav-item">
-                                    <a class="nav-link" font-size="0.8em">国产</a>
+                                    <a class="nav-link" font-size="0.8em" style="cursor:pointer">国产</a>
                                 </div>
                                 <div id="nochina" class="col-md-3 nav-item">
-                                    <a class="nav-link" font-size="0.8em">进口</a>
+                                    <a class="nav-link" font-size="0.8em" style="cursor:pointer">进口</a>
                                 </div>
                             </div>
                         </div>
                         <div class="row classify">
-                            <div id="cuback" class="col-md-2 classify_title">原产地</div>
+                            <div id="cuback" class="col-md-2 classify_title" style="cursor:pointer">原产地</div>
                             <ul id="country" class="col-md-10 nav nav-pills classify_detail">
                                 <li class="col-md-3 nav-item" v-for="country in countrys" @click="choseCountry(country)">
-                                    <a class="nav-link" font-size="0.8em">{{country.name}}</a>
+                                    <a class="nav-link" font-size="0.8em" style="cursor:pointer">{{country.name}}</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div id="fruits" class="card-deck">
+                    <div id="fruits" class="card-deck" style="cursor:pointer">
                         <div id="fruit" class="card" v-for="fruit in fruits" @click="chosefruit(fruit)">
                             <img class="card-img-top" :src="fruit.src" lt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">{{fruit.name}}</h5>
+                                <p>{{fruit.price}}元/kg</p>
                             </div>
                         </div>
                     </div>

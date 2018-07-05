@@ -18,7 +18,7 @@ function add() {
     }
 
     var carts = JSON.parse(localStorage.getItem('carts'));
-    if (carts == null) {
+    if (carts == null || carts.cart.length == 0) {
         carts = {
             cart: [dong]
         }
